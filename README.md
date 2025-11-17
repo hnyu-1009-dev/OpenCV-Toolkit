@@ -1,4 +1,4 @@
-# 🖼️ OpenCV Toolkit（中文版）
+# 🖼️ OpenCV Toolkit
 
 ## 概述（Overview）
 **OpenCV Toolkit** 是一个 **中英双语的全栈计算机视觉工作平台**。  
@@ -8,6 +8,7 @@
 
 ## 📁 仓库结构（Repository Layout）
 
+```
 OpenCV-Toolkit/
 ├─ backend-fastapi/OpenCV-Toolkit/ # FastAPI 服务、Tortoise ORM 模型、Aerich 迁移
 │ ├─ app/ # API 路由、业务逻辑、设置、数据库会话
@@ -17,7 +18,7 @@ OpenCV-Toolkit/
 ├─ src/api # Auth / Gallery / Vision 的 REST API 客户端
 ├─ src/views # 页面：工作空间、图库、用户信息、登录注册等
 └─ src/stores # Pinia 本地持久化 Auth Store
-
+```
 yaml
 复制代码
 
@@ -55,17 +56,6 @@ yaml
 | 后端 | FastAPI, Tortoise ORM, Aerich, Pillow, OpenCV, Uvicorn (Python ≥3.11) |
 | 前端 | Vue 3 + TypeScript, Vite, Pinia, Vue Router, Element Plus |
 | 存储 | 本地 `storage/` 文件夹，通过 `/media` 静态资源服务暴露 |
-
----
-
-## 🚀 快速开始（Getting Started）
-| 组件 | 变量 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| 后端 | `PROJECT_NAME`, `VERSION`, `API_PREFIX` | 内置默认 | 控制 FastAPI 文档/元数据 |
-| 后端 | `DATABASE_URL` | `sqlite://app.db` | 建议与 session.py DSN 配合使用 |
-| 后端 | `MEDIA_ROOT` | `storage` | 上传文件保存目录 |
-| 后端 | `BACKEND_CORS_ORIGINS` | `localhost:5173` | 配置允许跨域源 |
-| 前端 | `VITE_API_BASE_URL` | `http://127.0.0.1:8000/api/v1` | Axios 的 API 基地址 |
 
 ---
 
