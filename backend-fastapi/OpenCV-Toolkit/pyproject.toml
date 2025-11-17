@@ -1,0 +1,27 @@
+[project]
+name = "opencv-toolkit-backend"
+version = "0.1.0"
+description = "FastAPI backend for the OpenCV Toolkit project."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.32.0",
+    "pydantic-settings>=2.5.2",
+    "tortoise-orm[asyncpg,aiosqlite]>=0.21.4",
+    "passlib[bcrypt]>=1.7.4",
+    "aiosqlite>=0.20.0",
+    "Pillow>=10.4.0",
+    "opencv-python>=4.10.0.84",
+    "numpy>=2.1.0"
+]
+
+[tool.uvicorn]
+factory = false
+reload = true
+host = "0.0.0.0"
+port = 8000
+
+[tool.aerich]
+tortoise_orm = "app.db.session.TORTOISE_ORM_CONFIG"
+location = "./migrations"
+src_folder = "./."

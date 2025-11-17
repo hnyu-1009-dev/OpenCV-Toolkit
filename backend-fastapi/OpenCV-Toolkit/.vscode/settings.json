@@ -1,0 +1,31 @@
+{
+  // Python 文件默认格式化器（使用 Black）
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+
+  // 保存时自动格式化
+  "editor.formatOnSave": true,
+
+  // 保存时自动组织 import（需要 isort）
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+
+  // Black 格式化配置
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "120"],
+
+  // 禁用 Python 内置 lint（改用 Ruff 或 flake8）
+  "python.linting.enabled": false,
+
+  // 更快的 Python 分析
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.autoImportCompletions": true,
+
+  // 补充 Import 路径
+  "python.analysis.extraPaths": ["./", "./src"],
+
+  // 忽略 flake8 的行长度限制
+  "python.linting.flake8Args": ["--ignore=E501","--ignore=E502"]
+}

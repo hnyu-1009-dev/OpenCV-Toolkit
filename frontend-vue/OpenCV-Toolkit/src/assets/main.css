@@ -1,0 +1,24 @@
+@import './base.css';
+
+/* 全局背景与文字颜色，匹配登录/注册页面的深色背景 */
+body {
+  margin: 0;
+  background-color: #020617;
+  color: #0f172a;
+}
+
+/* 让根节点充满视窗，方便 App.vue 居中布局 */
+#app {
+  min-height: 100vh;
+  font-weight: 400;
+}
+
+/* 默认链接样式，突出品牌主色 */
+a {
+  color: #0ea5e9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
