@@ -28,7 +28,10 @@ class Settings(BaseSettings):
     MEDIA_ROOT: str = "storage"
 
     # 后端允许跨域访问的前端源列表
-    BACKEND_CORS_ORIGINS: List[str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
+    BACKEND_CORS_ORIGINS: List[str] = [
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ]
 
     class Config:
         # 指定环境变量文件路径（Pydantic 会自动读取该文件）
