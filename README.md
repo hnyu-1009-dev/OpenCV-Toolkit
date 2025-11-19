@@ -1,7 +1,7 @@
 # 🖼️ OpenCV Toolkit
 
 ## 概述（Overview）
-**OpenCV Toolkit** 是一个 **中英双语的全栈计算机视觉工作平台**。  
+**OpenCV Toolkit** 是一个 **计算机视觉工作平台**。  
 后端采用 **FastAPI + Tortoise ORM** 处理各种 OpenCV / Pillow 图像任务，前端使用 **Vue 3 + Element Plus** 构建单页可视化工作环境，让用户可以上传图片、调参处理、并将结果保存到共享图库中。
 
 ---
